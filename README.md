@@ -1,7 +1,5 @@
-## Wordy Extension
-### A word frequency util in a chrome extension
-
-[![Build Status](https://travis-ci.org/angus-c/wordy-extension.png?branch=master)](http://travis-ci.org/angus-c/wordy-extension)
+## Schwurbler Extension
+### A word frequency util in a chrome extension that marks the conspiracy words in red (5 words so far)
 
 Wordy lists all words on the current web page by usage frequency.
 

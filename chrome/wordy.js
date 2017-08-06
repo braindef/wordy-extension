@@ -24,21 +24,24 @@
       return this;
     },
 
+
     tabulate: function() {
       var result = '';
       this.data.words.forEach(function(datum) {
+        
         result += '<tr>';
-        result += [
-          '<td style="padding-right: 15px">',
-          datum[0],
-          '</td>',
-          '<td  style="padding-right: 15px">',
-          datum[1],
-          '</td>',
-          '<td  style="padding-right: 45px">',
-          ['(', (100*(datum[1]/this.data.total)).toFixed(2), '%)'].join(''),
-          '</td>'
-        ].join('');
+        result += '<td style="padding-right: 15px">';
+
+        if(checkword(datum[0]))
+        { result+='<font color=tomato>';
+        }
+
+        result += datum[0];
+        result += '</font></td><td  style="padding-right: 15px">';
+        result += datum[1];
+        result += '</td><td  style="padding-right: 45px">';
+        result += ['(', (100*(datum[1]/this.data.total)).toFixed(2), '%)'].join('');
+        result += '</td>';
         result += '</tr>';
       }, this);
       return result;
@@ -55,6 +58,17 @@
         update();
       });
     });
+  }
+
+  function checkword(word) {
+    var x=word;
+    if(["quantenheilung","trump","kristalle","matrix","trump","fakenews"].indexOf(x) !== -1)
+    {
+      document.querySelector('#header').innerHTML = "Schwurbler Alarm" 
+      return true;
+    }
+    else
+      return false;
   }
 
   function update(minSize, regex) {

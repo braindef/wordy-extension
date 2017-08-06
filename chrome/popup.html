@@ -3,9 +3,37 @@
   <head>
     <title>Wordy</title>
     <style>
+
+.blink_text {
+
+    animation:1s blinker linear infinite;
+    -webkit-animation:1s blinker linear infinite;
+    -moz-animation:1s blinker linear infinite;
+
+     color: red;
+    }
+
+    @-moz-keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+    @-webkit-keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+    @keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
       body {
         font-family: 'Helvetica Neue', Verdana, Arial, 'sans serif';
-        background-color: rgba(50, 50, 50, 0.901961);
+        background-color: rgba(90, 90, 90, 0.901961);
         font-size: 11pt;
         min-width: 330px;
         background-position: initial initial;
@@ -47,6 +75,8 @@
   </head>
 
   <body>
+    <br>
+    <h1 id=header class="blink_text"></h1>
     <input id="slider" type="range" min="1" max="8" title="minimum word size">
     <input id="regex" type="text" title="filter by regular expression" value=".">
     <table id="data">
