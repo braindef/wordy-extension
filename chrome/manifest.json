@@ -10,15 +10,12 @@
     "default_popup": "popup.html"
   },
 
-
-
-
   "content_scripts": [
     {
       "matches": [
         "<all_urls>"
       ],
-      "js": ["myscript.js","contentScript.js","background.js"]
+      "js": ["myscript.js","contentScript.js"]
     }
   ]
 }

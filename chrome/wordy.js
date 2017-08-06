@@ -1,5 +1,6 @@
 (function() {
   var pageText;
+  var count = 0;
   var counter = {
 
     analyze: function(text, min, regex) {
@@ -61,10 +62,26 @@
   }
 
   function checkword(word) {
-    var x=word;
-    if(["quantenheilung","trump","kristalle","matrix","trump","fakenews"].indexOf(x) !== -1)
+    if([
+"quantenheilung",
+"trump",
+"kristalle",
+"matrix",
+"trump",
+"fakenews",
+"chemtrail",
+"us4877027",
+"globuli",
+"bewusstsein",
+"matrixen",
+"aluminium",
+"alu"
+
+].indexOf(word) !== -1)
     {
-      document.querySelector('#header').innerHTML = "Schwurbler Alarm" 
+      count+=1;
+      if (count > 1)
+        document.querySelector('#header').innerHTML = "Schwurbler Alarm"; 
       return true;
     }
     else

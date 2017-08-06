@@ -1,1 +1,2 @@
-alert("hi")
+//alert("hi")
+//sendResponse({data: document.body.textContent});
