@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "wordy",
-  "description": "word frequency analysis",
+  "name": "schwurbler extension",
+  "description": "haeufigkeitsanaluese fuer Schwurbler Webseiten",
   "version": "1.0",
 
   "browser_action": {

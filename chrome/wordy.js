@@ -70,12 +70,15 @@
 "trump",
 "fakenews",
 "chemtrail",
+"geoengineering",
 "us4877027",
 "globuli",
 "bewusstsein",
 "matrixen",
 "aluminium",
-"alu"
+"alu",
+"antichrist",
+"satan"
 
 ].indexOf(word) !== -1)
     {
