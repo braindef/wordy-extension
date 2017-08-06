@@ -26,8 +26,12 @@ You can also filter the results with a regular expression...
 
 ###Testing
 
-npm install  
-karma start
 
+
+##Liste an möglichen Frameworks und HOWTOS für den Topic Modelling Ansatz:
+http://mallet.cs.umass.edu/topics.php
+https://www.analyticsvidhya.com/blog/2016/08/beginners-guide-to-topic-modeling-in-python/
+https://nlp.stanford.edu/software/tmt/tmt-0.4/
+http://academicearth.org/?s=machine%20learning
 
 
